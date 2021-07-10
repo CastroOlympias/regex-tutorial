@@ -28,11 +28,11 @@ What is Regex - you ask? Regex is short for regular expressions. What is it used
 ### Quantifiers
 - Greedy Quantifier:  `?` Expression example: `ath?`
 
-The '?' at the end of the search pattern means that the last character `h` is an optional search pattern, after the search pattern of `at`. In this case all characters containing `at` within the body of the text will be found by this expression example, and where `h` is found after `at` - will also be found in the search pattern. The below search pattern example will show how the search is performed.
+The `?` at the end of the search pattern means that the last character `h` is an optional search pattern, after the search pattern of `at`. In this case all characters containing `at` within the body of the text will be found by this expression example, and where `h` is found after `at` - will also be found in the search pattern. The below search pattern example will show how the search is performed.
 
-- Search pattern exmpale:
+<br>
 
-E`at`ing healthy and regularly with exercise and weight training are the keys to cre`at`ing greater levels of energy and motiv`at`ion, which in turn, you can use th`at` energy to create change in your world to become the director r`ath`er than the directed!
+`E`at`ing healthy and regularly with exercise and weight training are the keys to cre`at`ing greater levels of energy and motiv`at`ion, which in turn, you can use th`at` energy to create change in your world to become the director r`ath`er than the directed!`
 
 
 ### OR Operator
