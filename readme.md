@@ -1,10 +1,10 @@
 # My Regex Tutorial
 
-Eating healthy and regularly with exercise and weight training are the keys to creating greater levels of energy and motivation, which in turn, you can use that energy to create change in your world to become the director rather than the directed!
+What is Regex - you ask? Regex is short for regular expressions. What is it used for - you ask? Regex, or regular expression is a means to search through text. You can find certain text, characters and replace them, validate your text, such as email or URL validation. You can even group find and replace from your text.
 
 ## Summary
 
-What is Regex - you ask? Regex is short for regular expressions. What is it used for - you ask? Regex, or regular expression is a means to search through text. You can find certain text, characters and replace them, validate your text, such as email validation or phone number validation. You can even group find and replace from your text.
+This regex, or regular expression is for validating and matching a URL `^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$`
 
 
 ## Table of Contents
@@ -24,16 +24,15 @@ What is Regex - you ask? Regex is short for regular expressions. What is it used
 ## Regex Components
 
 ### Anchors
+*   The `^` of an expression matches at the start of the string and the `$` matches at the end of the string
+
+[https://www.google.com/photos]
+
+The use of the first component `^(https?:\/\/)` matches with the `https://` or `http://` since the question mark `?` precedes the `s`, leaving this character as optional in the search.
+
+The use of the second component ` ([\/\w \.-]*)*\/?$` matches with `//www.google.com/photos` The question mark `?` right before the dollar sign `$` allows for the match of `photos` in the URL as that allows for optional search patterns after the slash `/` no match is found if the question mark `?` is removed from the expression component or until `photo` in the URL is removed from the string.
 
 ### Quantifiers
-- Greedy Quantifier:  `?` Expression example: `ath?`
-
-The `?` at the end of the search pattern means that the last character `h` is an optional search pattern, after the search pattern of `at`. In this case all characters containing `at` within the body of the text will be found by this expression example, and where `h` is found after `at` - will also be found in the search pattern. The below search pattern example will show how the search is performed.
-
-<br>
-
-`E`at`ing healthy and regularly with exercise and weight training are the keys to cre`at`ing greater levels of energy and motiv`at`ion, which in turn, you can use th`at` energy to create change in your world to become the director r`ath`er than the directed!`
-
 
 ### OR Operator
 
